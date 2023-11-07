@@ -31,11 +31,11 @@ const value = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>
-                  What harsh truths do you prefer to ignore?
+                  <span className="orangeText">What harsh truths do you prefer to ignore?</span>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p>
+                <p className="SecondaryText">
                   Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
                   occaecat ut occaecat consequat est minim minim esse tempor
                   laborum consequat esse adipisicing eu reprehenderit enim.
@@ -45,11 +45,11 @@ const value = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>
-                  Is free will real or just an illusion?
+                <span className="orangeText">  Is free will real or just an illusion?</span>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p>
+                <p className="SecondaryText">
                   In ad velit in ex nostrud dolore cupidatat consectetur ea in
                   ut nostrud velit in irure cillum tempor laboris sed
                   adipisicing eu esse duis nulla non.
@@ -59,11 +59,11 @@ const value = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>
-                  Is free will real or just an illusion?
+                  <span className="orangeText">Is free will real or just an illusion?</span>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p>
+                <p className="SecondaryText">
                   In ad velit in ex nostrud dolore cupidatat consectetur ea in
                   ut nostrud velit in irure cillum tempor laboris sed
                   adipisicing eu esse duis nulla non.
