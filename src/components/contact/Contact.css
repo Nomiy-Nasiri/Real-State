@@ -24,7 +24,7 @@
   border-radius: 5px;
   gap: 1rem;
   
-  transition: all 200ms ease-in;
+  transition: all 250ms ease-in;
 }
 .mode.button {
   width: 100%;
@@ -33,12 +33,12 @@
   font-size: 0.9rem;
   font-weight: 600;
 }
-.mode > :nth-child(1) {
+.mode>:nth-child(1) {
   width: 100%;
   gap: 1.6rem;
 }
-.mode.detail.primaryText {
-  font-size: 1rem;
+.primaryText {
+  font-size: 1.7rem;
   font-weight: 600;
 }
 .mode:hover {

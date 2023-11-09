@@ -19,10 +19,10 @@ const Contact = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <MdCall size={25} />
+                    <BsFillChatDotsFill size={25} />
                   </div>
                   <div className="flexColStart details">
-                    <span className="primaryText">call </span>
+                    <span className="primaryText">video</span>
                     <span className="secondaryText">0344850034</span>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ const Contact = () => {
                     <HiChatBubbleBottomCenter size={25} />
                   </div>
                   <div className="flexColStart details">
-                    <span className="primaryText">Chat </span>
+                    <span className="primaryText">Message</span>
                     <span className="secondaryText">0344850034</span>
                   </div>
                 </div>
