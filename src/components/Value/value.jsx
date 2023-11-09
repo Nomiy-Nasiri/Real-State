@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionItem,
   AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
+  AccordionItemState,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
 import "./Value.css";
 import data from "../../utils/accordion";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 const value = () => {
   return (
@@ -27,49 +29,43 @@ const value = () => {
             blend of comfort and functionality. Enjoy cozy evenings by the
             fireplace
           </span>
-          <Accordion>
-            <AccordionItem>
-              <AccordionItemHeading>
-                <AccordionItemButton>
-                  <span className="orangeText">What harsh truths do you prefer to ignore?</span>
-                </AccordionItemButton>
-              </AccordionItemHeading>
-              <AccordionItemPanel>
-                <p className="SecondaryText">
-                  Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
-                  occaecat ut occaecat consequat est minim minim esse tempor
-                  laborum consequat esse adipisicing eu reprehenderit enim.
-                </p>
-              </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-              <AccordionItemHeading>
-                <AccordionItemButton>
-                <span className="orangeText">  Is free will real or just an illusion?</span>
-                </AccordionItemButton>
-              </AccordionItemHeading>
-              <AccordionItemPanel>
-                <p className="SecondaryText">
-                  In ad velit in ex nostrud dolore cupidatat consectetur ea in
-                  ut nostrud velit in irure cillum tempor laboris sed
-                  adipisicing eu esse duis nulla non.
-                </p>
-              </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-              <AccordionItemHeading>
-                <AccordionItemButton>
-                  <span className="orangeText">Is free will real or just an illusion?</span>
-                </AccordionItemButton>
-              </AccordionItemHeading>
-              <AccordionItemPanel>
-                <p className="SecondaryText">
-                  In ad velit in ex nostrud dolore cupidatat consectetur ea in
-                  ut nostrud velit in irure cillum tempor laboris sed
-                  adipisicing eu esse duis nulla non.
-                </p>
-              </AccordionItemPanel>
-            </AccordionItem>
+          <Accordion preExpanded={[0]}>
+            {data.map((item, i) => {
+              const [className, setClassName] = useState(null);
+              return (
+                <AccordionItem
+                  className={`accordionItem ${className}`}
+                  key={i}
+                  uuid={i}
+                >
+                  <AccordionItemHeading>
+                    <AccordionItemButton className="flexCenter accordionButton">
+                      <AccordionItemState>
+                        {({ expanded }) =>
+                          expanded
+                            ? setClassName("expanded")
+                            : setClassName("collapsed")
+                        }
+                      </AccordionItemState>
+
+                      <div className="flexCenter icon">{item.icon}</div>
+                      <span className="primaryText">{item.heading}</span>
+                      <div className="flexCenter icon">
+                        <MdOutlineArrowDropDown size={20} />
+                      </div>
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p className="SecondaryText">
+                      Exercitation in fugiat est ut ad ea cupidatat ut in
+                      cupidatat occaecat ut occaecat consequat est minim minim
+                      esse tempor laborum consequat esse adipisicing eu
+                      reprehenderit enim.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+              );
+            })}
           </Accordion>
         </div>
       </div>
