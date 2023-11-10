@@ -5,6 +5,8 @@ import "./App.css";
 import Resdensices from "./components/Resdensices/resdensices";
 import Value from "./components/Value/value";
 import Contact from "./components/contact/Contact";
+import GetStarted from "./components/GetStarted/GetStarted";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,8 @@ function App() {
       <Resdensices/>
       <Value/>
       <Contact/>
+      <GetStarted/>
+      <Footer/>
     </div>
   );
 }
