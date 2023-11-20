@@ -65,6 +65,7 @@
 @media (max-width: 640px) {
   .r-head {
     align-items: center;
+    /* justify-content: center; */
   }
   .r-buttons {
     position: initial;
