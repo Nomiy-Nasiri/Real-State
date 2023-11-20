@@ -10,7 +10,7 @@ const Resdensices = () => {
       <div className="innerWidth paddings r-container">
         <div className="flexColStart r-head">
           <span className="orangeText">Great Choices</span>
-          <span className="primaryText">Most Famous Residencies</span>
+          <span className="primaryText">Famous Residencies</span>
         </div>
         <Swiper {...sliderSettings}>
             <SliderButtons/>
