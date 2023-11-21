@@ -40,7 +40,7 @@ const Header = () => {
           <a href="#contact-us" onClick={() => handleMenuLinkClick('residencies')}>Contact us</a>
           <a href="#get-Started" onClick={() => handleMenuLinkClick('residencies')}>Get started</a>
           <button className="button">
-            <a href=""> contact</a>
+            <a href="https://www.linkedin.com/in/noman-nasir-a0ba18295/"> contact</a>
           </button>
         </div>
         <div className="menu-icon" onClick={() => setMenuOpen((prev) => !prev)}>
