@@ -14,7 +14,7 @@ import { MdOutlineArrowDropDown } from "react-icons/md";
 
 const value = () => {
   return (
-    <div className="v-Wrapper">
+    <div className="v-Wrapper" id="our-values">
       <div className="paddings innerWidth flexCenter v-container">
         <div className="v-left">
           <div className="image-container">

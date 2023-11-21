@@ -14,6 +14,17 @@ const Header = () => {
       };
     }
   };
+  const handleMenuLinkClick = (targetId) => {
+    setMenuOpen(false); // Close the menu when a link is clicked
+
+    // Scroll to the target section
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
     <section className="h-wrapper">
       <div className="flexCenter paddings innerWidth h-container">
@@ -24,10 +35,10 @@ const Header = () => {
         }}>
 
         <div className=" flexCenter h-menu" style={getMenuOpenStyles(menuOpen)}>
-          <a href=""> Resedencies</a>
-          <a href="">Our Value</a>
-          <a href="">Contact us</a>
-          <a href="">Get started</a>
+          <a href="#residencies" onClick={() => handleMenuLinkClick('residencies')}> Resedencies</a>
+          <a href="#our-values" onClick={() => handleMenuLinkClick('residencies')}>Our Value</a>
+          <a href="#contact-us" onClick={() => handleMenuLinkClick('residencies')}>Contact us</a>
+          <a href="#get-Started" onClick={() => handleMenuLinkClick('residencies')}>Get started</a>
           <button className="button">
             <a href=""> contact</a>
           </button>

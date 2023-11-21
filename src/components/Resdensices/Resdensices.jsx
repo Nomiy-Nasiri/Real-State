@@ -6,7 +6,7 @@ import data from "../../utils/slider.json";
 import { sliderSettings } from "../../utils/common";
 const Resdensices = () => {
   return (
-    <section className="r-wrapper">
+    <section className="r-wrapper" id="residencies">
       <div className="innerWidth paddings r-container">
         <div className="flexColStart r-head">
           <span className="orangeText">Great Choices</span>

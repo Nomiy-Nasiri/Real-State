@@ -2,7 +2,7 @@ import React from "react";
 import "./GetStarted.css";
 const GetStarted = () => {
   return (
-    <section className="g-wapper">
+    <section className="g-wapper" id="get-Started">
       <div className="padding innerWidth g-container">
         <div className="flexColCenter inner-container">
           <span className="primaryText">Get stated</span>
