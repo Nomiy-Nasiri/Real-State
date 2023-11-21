@@ -50,7 +50,7 @@ const Contact = () => {
                     <MdCall size={25} />
                   </div>
                   <div className="flexColStart details">
-                    <span className="primaryText">call </span>
+                    <span className="primaryText">Call </span>
                     <span className="secondaryText">0344850034</span>
                   </div>
                 </div>

@@ -14,7 +14,7 @@
   margin-top: 2rem;
   gap: 1rem;
 }
-.contactModes.row {
+.contactModes .row {
   gap: 1.5rem;
 }
 .mode {
@@ -23,7 +23,7 @@
   border: 0.8px solid rgba(128, 128, 128, 0.143);
   border-radius: 5px;
   gap: 1rem;
-  
+
   transition: all 250ms ease-in;
 }
 .mode.button {
@@ -33,7 +33,7 @@
   font-size: 0.9rem;
   font-weight: 600;
 }
-.mode>:nth-child(1) {
+.mode > :nth-child(1) {
   width: 100%;
   gap: 1.6rem;
 }
@@ -51,8 +51,21 @@
   color: white;
   scale: 0.8;
 }
-@media (max-width:1024px) {
-  .c-container{
+@media (max-width: 1024px) {
+  .c-container {
     flex-direction: column;
+  }
+  .c-right {
+    justify-content: center;
+  }
+  .contactModes {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mode {
+    width: 100%;
   }
 }
