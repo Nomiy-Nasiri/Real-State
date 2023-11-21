@@ -14,10 +14,10 @@ const Footer = () => {
           <span className="primaryText">Information</span>
           <span className="secondaryText">new yourk 3423 st 23 UGA</span>
           <div className="flexCenter f-menu">
-            <span  className="secondaryText">Property</span>
-            <span  className="secondaryText">Services</span>
-            <span  className="secondaryText">Product</span>
-            <span  className="secondaryText">About Us </span>
+            <span className="secondaryText">Property</span>
+            <span className="secondaryText">Services</span>
+            <span className="secondaryText">Product</span>
+            <span className="secondaryText">About Us </span>
           </div>
         </div>
       </div>

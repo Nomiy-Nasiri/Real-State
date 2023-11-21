@@ -60,13 +60,15 @@ const Hero = () => {
           </div>
         </div>
         <div className="flexCenter hero-right">
-          <motion.div className="image-container"
-          initial = {{x:"7rem",opacity:0}}
-          animate = {{x:0,opacity:1}}
-          transition={{
-            duration: 3,
-           type:"spring"
-          }}>
+          <motion.div
+            className="image-container"
+            initial={{ x: "7rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 3,
+              type: "spring",
+            }}
+          >
             <img src="./hero-image.png" alt="" />
           </motion.div>
         </div>
