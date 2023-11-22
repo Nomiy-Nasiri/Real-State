@@ -30,9 +30,9 @@ const Contact = () => {
               </div>
 
               <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                <div className="flexStart">    
+                  <div className="flexCenter icon">     
+                    <BsFillChatDotsFill size={25} />      
                   </div>
                   <div className="flexColStart details">
                     <span className="primaryText">Chat </span>

@@ -5,7 +5,7 @@
     border-radius: 10px;
     border: 6px solid #5d77d6;
     text-align: center;
-
+                                
 }
 .inner-container .primaryText{
     color: white;
@@ -18,6 +18,6 @@
 .inner-container .button{
     background: #5a73d7;
     border: 2px solid white;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow);           
     border-radius: 10px;
 }           

@@ -17,7 +17,7 @@ const Resdensices = () => {
           {data.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="flexColStart r-card">
-                <img src={card.image} alt="home" />
+                <img src={card.image} alt="home" />          
                 <span className="secondaryText" r-price>
                   <span style={{ color: "orange" }}>$</span>
                   <span>{card.price}</span>
@@ -25,7 +25,7 @@ const Resdensices = () => {
                 <span className="primaryText">{card.name}</span>
                 <span className="secondaryText">{card.detail}</span>
               </div>            
-            </SwiperSlide>
+            </SwiperSlide>            
           ))}
         </Swiper>
       </div>
