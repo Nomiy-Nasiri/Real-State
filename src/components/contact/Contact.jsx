@@ -15,7 +15,7 @@ const Contact = () => {
             blend of comfort and functionality
           </span>
           <div className="flexColStart contactModes">
-            <div className="flexStart row">
+            <div className="flexStart row">                
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">

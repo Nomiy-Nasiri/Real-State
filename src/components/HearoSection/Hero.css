@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: flex-end;
 }
-.hero-left {
+.hero-left {           
   gap: 3rem;
 }
 .hero-title {

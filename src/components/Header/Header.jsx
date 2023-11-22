@@ -11,7 +11,7 @@ const Header = () => {
       return {
         right: !menuOpen && "-100%",
       };
-    }
+    }                
   };
   const handleMenuLinkClick = (targetId) => {
     setMenuOpen(false); // Close the menu when a link is clicked

@@ -35,7 +35,7 @@ const value = () => {
               return (
                 <AccordionItem
                   className={`accordionItem ${className}`}
-                  key={i}
+                  key={i}             
                   uuid={i}
                 >
                   <AccordionItemHeading>

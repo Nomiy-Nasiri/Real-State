@@ -15,7 +15,7 @@ const Hero = () => {
               animate={{ y: "0", opacity: 1 }}
               transition={{
                 duration: 3,
-                type: " spring",
+                type: " spring",           
               }}
             >
               Discover <br /> Most Suitable <br />

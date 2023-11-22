@@ -20,7 +20,7 @@ const Footer = () => {
             <span className="secondaryText">About Us </span>
           </div>
         </div>
-      </div>
+      </div>                        
     </section>
   );
 };

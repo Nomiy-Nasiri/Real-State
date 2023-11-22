@@ -9,7 +9,7 @@ const GetStarted = () => {
           <span className="secondaryText">
             Browse and indentify best and goods for your faimaly
             <br />
-            Find your Residence soon
+            Find your Residence soon             
           </span>
           <button className="button">
             <a href="https://www.linkedin.com/in/noman-nasir-a0ba18295/">

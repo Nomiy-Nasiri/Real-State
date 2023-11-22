@@ -24,7 +24,7 @@ const Resdensices = () => {
                 </span>
                 <span className="primaryText">{card.name}</span>
                 <span className="secondaryText">{card.detail}</span>
-              </div>
+              </div>            
             </SwiperSlide>
           ))}
         </Swiper>
